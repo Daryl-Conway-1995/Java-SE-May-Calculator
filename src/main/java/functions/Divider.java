@@ -1,6 +1,6 @@
 package functions;
 
-public class Divide {
+public class Divider {
 	public double divide(int i, int j) {
 		return (double) i/j;
 	}

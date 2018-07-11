@@ -16,7 +16,7 @@ public class CalculatorTest {
 	@Test
 	public void minustest() {
 		Calculator calc = new Calculator();
-		int actualValue = calc.minus(7, 2);
+		int actualValue = calc.subtract(7, 2);
 		Assert.assertEquals(5, actualValue);
 	}
 

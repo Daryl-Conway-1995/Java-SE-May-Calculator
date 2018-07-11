@@ -4,22 +4,22 @@ import functions.*;
 public class Calculator {
 
 	public int add(int i, int j) {
-		Add add = new Add();
+		Adder add = new Adder();
 		return add.add(i,j);
 	}
 
-	public int minus(int i, int j) {
-		Minus minus = new Minus();
-		return minus.minus(i,j);
+	public int subtract(int i, int j) {
+		Subtractor subtract = new Subtractor();
+		return subtract.subtract(i,j);
 	}
 
 	public double divide(int i, int j) {
-		Divide divide = new Divide();
+		Divider divide = new Divider();
 		return divide.divide(i,j);
 	}
 
 	public int mult(int i, int j) {
-		Multiply multiply = new Multiply();
+		Multiplier multiply = new Multiplier();
 		return multiply.multiply(i,j);
 	}
 }
