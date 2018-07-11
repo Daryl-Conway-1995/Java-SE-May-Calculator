@@ -5,24 +5,24 @@ import org.junit.Test;
 
 
 public class CalculatorTest {
+	
+	private static Calculator calc = new Calculator();
+	
 
 	@Test
 	public void addtest() {
-		Calculator calc = new Calculator();
 		int actualValue = calc.add(2, 2);
 		Assert.assertEquals(4, actualValue);
 	}
 	
 	@Test
 	public void minustest() {
-		Calculator calc = new Calculator();
 		int actualValue = calc.subtract(7, 2);
 		Assert.assertEquals(5, actualValue);
 	}
 
 	@Test
 	public void dividetest() {
-		Calculator calc = new Calculator();
 		double actualValue = calc.divide(10, 2);
 		Assert.assertEquals(5.0, actualValue,0.001);
 		
@@ -30,7 +30,6 @@ public class CalculatorTest {
 	
 	@Test 
 	public void multiplyTest() {
-		Calculator calc = new Calculator();
 		int actualValue = calc.mult(5, 2);
 		Assert.assertEquals(10, actualValue);
 		
